@@ -17,6 +17,9 @@
     /* input, textarea{
         box-shadow: 2px 4px rgba(5, 5, 5, 0.2);
     } */
+     .product_category{
+        padding: 5px;
+     }
 
 </style>
 @section('content')
@@ -49,7 +52,7 @@
         <input type="number" name="product_quantity" value="{{ old('product_quantity') }}">&nbsp;&nbsp;&nbsp;&nbsp;
 
         <label>Product Category:</label>&nbsp;
-        <select name="product_category" required>
+        <select name="product_category" class="product_category" required>
             <option value="">-- Select Category --</option>
             @foreach($categories as $cat)
             <option value="{{ $cat->id }}">{{ $cat->category_name }}</option>

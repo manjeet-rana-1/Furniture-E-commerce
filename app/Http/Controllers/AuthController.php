@@ -47,9 +47,6 @@ class AuthController extends Controller
         return redirect('/login')->with('success', 'Registration successful. Please login.');
     }
 
-
-
-    
 public function showImagesForm(){
     $images = images::all();
     return view('admin_dashboard.images_collection.images', compact('images'));
