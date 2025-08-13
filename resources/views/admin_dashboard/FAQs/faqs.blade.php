@@ -42,8 +42,8 @@
     <label for="answer">Answer:</label>
     <textarea name="answer" id="answer" rows="5" required></textarea><br>
 
-    <button type="submit" class="btn btn-dark">Add FAQ</button>
-    <a href="{{ route('faq-list')}}" class="btn btn-dark">View FAQs</a>
+    <button type="submit" class="btn btn-primary">Add FAQ</button>
+    <a href="{{ route('faq-list')}}" class="btn btn-info">View FAQs</a>
   </form>
 
 @endsection

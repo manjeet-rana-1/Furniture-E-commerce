@@ -64,7 +64,7 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-md-12">
-                                    <a href="{{route('add.products')}}" class="btn btn-dark add-button">Add Products</a>
+                                    <a href="{{route('add.products')}}" class="btn btn-primary add-button">Add Products</a>
                                 </div>
                                 </div>
                                 </div>
@@ -101,8 +101,8 @@
                                                             <img src="{{ asset('storage/' . $item->product_image) }}" alt="Image" width="80">
                                                         </td>
                                                         <td>
-                                                            <a href="{{ url('/delete-product/' . $item->id) }}" class="btn btn-dark">Delete</a>
-                                                            <a href="{{ url('edit-product/' . $item->id) }}" class="btn btn-dark">Update</a>
+                                                            <a href="{{ url('/delete-product/' . $item->id) }}" class="btn btn-danger">Delete</a>
+                                                            <a href="{{ url('edit-product/' . $item->id) }}" class="btn btn-warning">Update</a>
                                                         </td>
                                                     </tr>
                                                     @endforeach

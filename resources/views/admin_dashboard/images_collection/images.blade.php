@@ -22,7 +22,7 @@
     @csrf
     <label for="images">Add Images</label>
     <input type="file" name="images[]" multiple><br><br>
-    <button type="submit" class="btn btn-dark">Add Images</button>
+    <button type="submit" class="btn btn-primary">Add Images</button>
     </form>
 </div>
 
@@ -41,7 +41,7 @@
                     <tr>
                         <td><img src="{{ asset($image->images) }}" width="100" height="100"></td>
                             <td>
-                                <a href="{{ route('delete.image', $image->id) }}" class="btn btn-dark">Delete</a>
+                                <a href="{{ route('delete.image', $image->id) }}" class="btn btn-danger">Delete</a>
                             </td>
                     </tr>
                     @endforeach

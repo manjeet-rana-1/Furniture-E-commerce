@@ -9,7 +9,7 @@
         <p style="color: green">{{session('success')}}</p>
             @endif
 
-            <a href="{{ route('category.create') }}"><button class="btn btn-dark mt-3 mb-3">Add New Category</button></a>
+            <a href="{{ route('category.create') }}"><button class="btn btn-primary mt-3 mb-3">Add New Category</button></a>
             <table class="table">
                     <thead>
                      <tr>
@@ -26,8 +26,8 @@
                         <td>{{$category->category_name}}</td>
                         <td><img src="{{ asset($category->image) }}" alt="" width="80"></td>
                         <td>
-                           <a href="{{ url('/update/category/' . $category->id) }}"><button class="btn btn-dark">Update</button></a>
-                           <a href="{{ url('/delete/category/' . $category->id) }}" method="POST" class="from-table" enctype="multipart/form-data"><button class="btn btn-dark">Delete</button></a>
+                           <a href="{{ url('/update/category/' . $category->id) }}"><button class="btn btn-warning">Update</button></a>
+                           <a href="{{ url('/delete/category/' . $category->id) }}" method="POST" class="from-table" enctype="multipart/form-data"><button class="btn btn-danger">Delete</button></a>
                         </td>
                         </tr>
                         @endforeach

@@ -69,7 +69,7 @@
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <button type="submit" class="btn btn-dark">Add Product</button>
+        <button type="submit" class="btn btn-primary">Add Product</button>
         {{-- <a href="{{ route('Product.list') }}"><button class="btn btn-dark">View Products List</button></a> --}}
     </form>
 @endsection

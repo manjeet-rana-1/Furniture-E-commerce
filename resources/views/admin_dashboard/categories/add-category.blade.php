@@ -23,8 +23,8 @@
                 <label for="image">Image</label>
                 <input type="file" name="image" required> <br><br>
 
-                <button type="submit" class="btn btn-dark">Add Category</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="{{ route('category.list') }}"><button class="btn btn-dark">View Category List</button></a>
+                <button type="submit" class="btn btn-primary">Add Category</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="{{ route('category.list') }}"><button class="btn btn-info">View Category List</button></a>
             </form>
             </div>
         </div>
