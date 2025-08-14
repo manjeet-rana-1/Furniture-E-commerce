@@ -39,7 +39,9 @@
                 <tbody>
                     @foreach($images as $image)
                     <tr>
-                        <td><img src="{{ asset($image->images) }}" width="100" height="100"></td>
+                      <td>
+                        <img src="{{ asset('storage/' . $image->image_path) }}" width="50" height="50">
+                    </td>
                             <td>
                                 <a href="{{ route('delete.image', $image->id) }}" class="btn btn-danger">Delete</a>
                             </td>

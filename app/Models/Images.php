@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Images extends Model
 {
-    protected $fillable = ['add_product_id', 'image_path'];
+    protected $fillable = ['product_id', 'image_path'];
 
     public function product()
     {
-        return $this->belongsTo(AddProduct::class, 'add_product_id');
+        return $this->belongsTo(AddProduct::class, 'product_id');
     }
 }

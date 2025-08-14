@@ -5,11 +5,11 @@
         margin-left:1000px;
     }
     .table-body{
-        width:50%;
-        margin-left:300px;
+        width:100%;
+        margin-left:200px;
     }
     .page-title{
-        margin-left: 380px;
+        margin-left: 300px;
     }
 </style>
 @section('content')
@@ -78,7 +78,6 @@
                                                 <thead>
                                                   <tr>
                                                     <th scope="col">ID</th>
-                                                    {{-- <th scope="col">Category ID</th> --}}
                                                     <th scope="col">Category</th>
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Price</th>
@@ -97,8 +96,13 @@
                                                         <td>{{ $item->product_name }}</td>
                                                         <td>{{ $item->product_price }}</td>
                                                         {{-- <td>{{ $item->product_description }}</td> --}}
-                                                        <td>
+                                                        {{-- <td>
                                                             <img src="{{ asset('storage/' . $item->product_image) }}" alt="Image" width="80">
+                                                        </td> --}}
+                                                        <td>
+                                                            @foreach($item->images as $image)
+                                                                <img src="{{ asset('storage/' . $image->image_path) }}" width="50" height="50">
+                                                            @endforeach
                                                         </td>
                                                         <td>
                                                             <a href="{{ url('/delete-product/' . $item->id) }}" class="btn btn-danger">Delete</a>
